@@ -1,0 +1,267 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+body {
+    overflow-x: hidden;
+}
+:root {
+    --DarkGray: hsl(0, 0%, 63%);
+    --Black: hsl(0, 0%, 0%);
+    --white: hsl(0, 0%, 100%);
+    --very-Dark-Gray: hsl(0, 0%, 27%);
+    --font-size: 12px
+}
+.top {
+    display: flex;
+}
+
+a {
+    text-decoration: none;
+}
+
+nav {
+    display: flex;
+    color: black;
+    width: 80%;
+    /* position: relative;
+    padding-top: 161px; 
+    padding-left: 84px;
+    bottom: 500px; */
+    /* flex-direction: row; */
+    /* align-items: center; */
+}
+
+.logo {
+    height: 14px;
+    width: 60px;
+}
+
+.first {
+    background: url("images/desktop-image-hero-1.jpg") no-repeat center center/cover;
+    height: 400px;
+    width: 60%;
+    display: flex;
+    padding-top: 40px;
+    padding-left: 50px;
+    color: var(--white);
+    font-family: 'League Spartan', sans-serif;
+
+}
+.chair {
+    width: 780px;
+    height: 400px;
+}
+
+li a:hover {
+    color: black;
+}
+
+.mainMenu{
+    display: flex;
+    list-style-type: none;
+    margin-left: 40px;
+    font-family: 'League Spartan', sans-serif;
+}
+
+li a {
+    text-decoration: none;
+    color: var(--white);
+    margin-left: 10px;
+}
+.second {
+    height: 400px;
+    width: 40%;
+    background-color: var(--white);
+    padding: 100px;
+}
+h1 {
+    font-size: 30px;
+    width: 400px;
+    font-family: 'League Spartan', sans-serif;
+    font-weight: 700;
+}
+p {
+    font-size: 12px;
+    width: 400px;
+    font-family: 'League Spartan', sans-serif;
+    margin-top: 10px;
+    font-weight: 500;
+    letter-spacing: 2px;
+    line-height: 15px;
+    color: var(--very-Dark-Gray);
+}
+h6 {
+    margin-top: 40px;
+    /* margin-right: 280px; */
+    font-weight: 500;
+    background-color: white; 
+    /* width: 128px; */
+    font-family: 'League Spartan', sans-serif;
+    color: var(--very-Dark-Gray);
+   
+
+}
+
+h6 a {
+    color: black;
+    letter-spacing: 9px;
+    
+}
+.bottom{
+    display: flex;
+    /* height: 270px; */
+}
+.picss {
+    width: 400px;
+    height: 272px;
+
+}
+.b {
+    width: 500px;
+    height: 272px;
+   
+}
+.abouter {
+    background-color:var(--white);
+    width: 510px;
+    padding: 70px;
+    font-family: 'League Spartan', sans-serif;
+    height: 272px;
+    
+}
+.arrow {
+    
+    /* width:100px; */
+    /* height: 50px; */
+    display: flex;
+    /* justify-content: center; */
+
+    
+}
+
+.lefty{
+    background-color: black;
+    /* margin: 10px auto; */
+    padding: 12px 18px 12px 18px; 
+    left: -100px;
+    top: 59px;
+    position: relative;
+   
+    /* padding: 15px 25px 15px 25px; */
+}
+.righty {
+    background-color: var(--DarkGray);
+    /* margin: 10px auto; */
+   padding: 12px 18px 12px 19px;
+    position: relative;
+    top:59px;
+    left: -100px;
+    
+} 
+
+button {
+    position: relative;
+    bottom: 15px;
+    border: none;
+    background-color: var(--white);
+    left: 150px;
+    color: var(--DarkGray);
+}
+
+@media (max-width: 640px) {
+     .top{
+        text-align: center;
+        flex-direction: column;
+        }
+        .first {
+            /* position: unset; */
+            background: url("images/mobile-image-hero-1.jpg") no-repeat center center/cover;
+            width: 100%;
+
+        }
+        
+        .second {
+            height: 300px;
+            width: 600px;
+            text-align: center;
+            padding: 50px;
+        }
+        
+        .picss {
+            height: 300px;
+            width: 100%;
+            position: unset ;
+            margin: 20px 0px 10px 0px;
+        }
+        .abouter {
+            height: 300px;
+            width: 550px;
+            position: unset;
+        }
+        .b {
+            height: 300px;
+             width: 100%;
+            position: unset;
+        } 
+        
+        .bottom {
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            /* flex-wrap: wrap;
+            position: unset; */
+
+        }
+        .con-room {
+            display: block;
+        }
+        .arrow {
+            position: relative;
+            right: -394px;
+            top: -400px;
+        }
+        h6 {
+            position: absolute;
+
+        }
+        nav {
+            flex-direction: column;
+            align-items: center;
+                text-align: center;
+               
+
+      
+        }
+        nav img {
+            margin-left: 10px;
+        }
+       nav .mainMenu {
+        margin-right: 50px;
+        margin-top: 20px;
+        
+       }
+       .lefty{
+        top: 160px;
+        left: -60px;
+       }
+        .righty {
+            top: 160px;
+            left: -60px;
+            background-color: black;
+        }
+        body {
+            /* overflow-x: hidden; */
+            }
+
+        
+       
+
+    }
+    
+
+
+
